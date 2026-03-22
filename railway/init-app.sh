@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Install PHP dependencies
+composer install --no-dev --optimize-autoloader
+
 # Set the application key
 php artisan key:generate --force
 
@@ -13,6 +16,3 @@ php artisan db:seed --force
 php artisan config:cache
 php artisan route:cache
 php artisan view:cache
-
-# Start the Laravel server
-php artisan serve --host=0.0.0.0 --port=$PORT
