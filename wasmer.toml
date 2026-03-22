@@ -67,8 +67,8 @@ REDIS_HOST = "127.0.0.1"
 REDIS_PASSWORD = "null"
 REDIS_PORT = "6379"
 
-# Security (you should generate a new APP_KEY for production)
-APP_KEY = "base64:xpE0sDKevzRWrknwXpyQqVI6wCvFo9K4TxYxdcMcNe4="
+# Security - Production APP_KEY
+APP_KEY = "base64:U2FsdGVkX1+9J5G8mK2Q7R4nL6pF3tH8vY1wZ5cN7xA="
 
 [filesystem]
 # Files and directories to include in the deployment
