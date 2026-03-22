@@ -1,12 +1,13 @@
 [dependencies]
 "php/php" = "=8.3.4"
+"shyim/composer-wasmer" = "latest"
 
 [fs]
 "/app/" = "."
 
 [[command]]
 name = "run"
-module = "php/php:php"
+module = "shyim/composer-wasmer:sh"
 runner = "wasi"
 [command.annotations.wasi]
-main-args = ["-t", "/app/public", "-S", "localhost:8080"]
+main-args = ["/app/start.sh"]
